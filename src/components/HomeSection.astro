@@ -1,0 +1,24 @@
+---
+import HomeSectionDesktop from "./home/HomeSectionDesktop.astro";
+---
+
+<>
+	<section
+		id="home"
+		class="absolute w-full"
+	>
+		<div class="hidden md:block">
+			<HomeSectionDesktop />
+		</div>
+		<div class="block md:hidden">
+			<!-- <HomeSectionMobile client:load /> -->
+		</div>
+	</section>
+	<!-- Buffer so the scrolling works as intended -->
+	<div
+		id="svh"
+		class="h-svh"
+	>
+	</div>
+	<!-- <ScrollIndicator client:idle /> -->
+</>
