@@ -22,7 +22,7 @@ export default function AntHoney() {
 
   return (
     <h1
-      className="flex cursor-pointer font-bespoke text-9xl text-secondary"
+      className="flex cursor-pointer font-bespoke text-9xl text-orange-100"
       style={{
         lineHeight: "normal",
         letterSpacing: "-0.05em",
@@ -38,7 +38,6 @@ export default function AntHoney() {
         >
           <img
             className="w-32 h-32 mt-3 max-w-none drop-shadow-md"
-            style={{ maxWidth: "none", filter: "drop-shadow(3px 3px 5px black)" }}
             src={ant.src}
             alt="ant"
             aria-hidden="true"

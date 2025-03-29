@@ -1,9 +1,17 @@
 ---
 import AntHoney from "./AntHoney";
 import NameHoverIndicator from "./NameHoverIndicator";
+import grainy from "../../assets/grainy.png";
 ---
 
-<div class="flex h-svh w-full flex-col items-center justify-center">
+<div
+	class="flex h-svh w-full flex-col items-center justify-center bg-[109px] bg-repeat opacity-40 bg-blend-multiply mix-blend-multiply"
+	style=`background-image: url(${grainy.src})`
+>
+</div>
+<div
+	class="absolute top-0 flex h-svh w-full flex-col items-center justify-center"
+>
 	<AntHoney client:load />
-	<NameHoverIndicator client:load />
+	<NameHoverIndicator client:idle />
 </div>
